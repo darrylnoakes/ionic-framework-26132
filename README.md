@@ -8,4 +8,7 @@ Steps to reproduce bug:
 4. Click the "login" button. You should be take to the settings page.
 5. Click the back button. The URL will change to the root, but the login page will be displayed.
 
-There is also a button on the settings page to go to the home page. This works fine, as it uses `push`, not `back`.
+To compare behaviors, there are two extra buttons:
+
+- A button on the settings page to go to the home page. This works fine, as it uses `push`, not `back`.
+- A button on the login page to "login" and navigate using `replace` (instead of `push`).

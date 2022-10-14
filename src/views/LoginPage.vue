@@ -17,6 +17,11 @@ const login = () => {
   isLoggedIn.value = true;
   router.push({ name: "settings" });
 };
+
+const loginAndReplace = () => {
+  isLoggedIn.value = true;
+  router.replace({ name: "settings" });
+};
 </script>
 
 <template>
@@ -29,6 +34,7 @@ const login = () => {
 
     <ion-content>
       <ion-button @click="login">Login</ion-button>
+      <ion-button @click="loginAndReplace">Login with replace</ion-button>
     </ion-content>
   </ion-page>
 </template>
